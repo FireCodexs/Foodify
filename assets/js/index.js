@@ -223,6 +223,7 @@ function renderSearchHistory() {
     historyItem.setAttribute("class", "form-control d-block bg-primary mb-1 text-white text-center responsive-content");
     historyItem.setAttribute("value", searchHistory[i]);
     historyItem.addEventListener("click", function () {
+<<<<<<< HEAD
 //this clears the old input - andrei
 cardArea.innerHTML = "";
       fetch(
@@ -360,6 +361,10 @@ cardArea.innerHTML = "";
                           </div>`;
           }
         });
+=======
+      getIngredient(historyItem.value);
+      cardArea.innerHTML = "";
+>>>>>>> e14185fedf39cdcbca1bba325337e0f306c06cdb
     });
     historyEl.append(historyItem);
   };
