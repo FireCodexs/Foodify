@@ -205,7 +205,18 @@ searchButton.addEventListener("click", function (event) {
   localStorage.setItem("search", JSON.stringify(searchHistory));
   renderSearchHistory();
 });
+
 /* create an event listener for when the user clicks on the clear search history button*/
+clearEl.addEventListener("click", function () {
+  localStorage.clear();
+  searchHistory = [];
+  renderSearchHistory();
+  /**use window.location.reload to reset the page and ensure the page knows local storage is cleared */
+  window.location.reload();
+});
+
+
+/** create function to render the search history */
 function renderSearchHistory() {
   historyEl.innerHTML = "";
   for (let i = 0; i < searchHistory.length; i++) {
