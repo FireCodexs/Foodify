@@ -1,4 +1,5 @@
 // api keys for use with the application */
+
 let spoonacularApiKey = "9575d7b24ee042eabce68a8f0dd4cec7";
 let calorieNinjaApiKey = "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA";
 /**defined global variables for application code */
@@ -223,7 +224,7 @@ function renderSearchHistory() {
     historyItem.setAttribute("class", "form-control d-block bg-primary mb-1 text-white text-center responsive-content");
     historyItem.setAttribute("value", searchHistory[i]);
     historyItem.addEventListener("click", function () {
-<<<<<<< HEAD
+
 //this clears the old input - andrei
 cardArea.innerHTML = "";
       fetch(
@@ -257,23 +258,23 @@ cardArea.innerHTML = "";
                           <p class="lead"><strong>Dish price:</strong> ${Number.parseFloat(
                 data.results[i].pricePerServing / 100
               ).toFixed(2)}£</p>
-                          <!-- Recipe Button trigger modal -->
-                          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#recipeModal${i}">
-                            Show Calories
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="recipeModal${i}" tabindex="-1" role="dialog" aria-labelledby="recipeModal"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <!--Header-->
-                            <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">Your Food's Nutritional Values</h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">×</span>
-                          </button>
-                          </div>
-                          <!--Body-->
+                  <!-- Recipe Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#recipeModal${i}">
+                    Show Calories
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="recipeModal${i}" tabindex="-1" role="dialog" aria-labelledby="recipeModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Your Food's Nutritional Values</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                  </div>
+                  <!--Body-->
                           <div class="modal-body">
                           <table class="table table-hover">
                             <thead>
@@ -361,10 +362,9 @@ cardArea.innerHTML = "";
                           </div>`;
           }
         });
-=======
       getIngredient(historyItem.value);
       cardArea.innerHTML = "";
->>>>>>> e14185fedf39cdcbca1bba325337e0f306c06cdb
+// e14185fedf39cdcbca1bba325337e0f306c06cdb
     });
     historyEl.append(historyItem);
   };
