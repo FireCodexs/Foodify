@@ -44,7 +44,12 @@ The App also enables users to type in the name a dish. This will then produce fu
 
 To access the finished application please use the following link: [Foodify App]().
 
-To view the code repository for the deployed application please use the following link: [Github Repository](https://github.com/FireCodexs/Foodify).
+To view the code repository for the  deployed  main application please use the following link: [Github Repository](https://github.com/FireCodexs/Foodify).
+
+Links to my individual Deployment page
+
+https://github.com/AbbyIT/Foodify                        
+https://abbyit.github.io/Foodify/
 
 ## Wireframing
 
